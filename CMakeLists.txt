@@ -3,6 +3,6 @@ project(LowLevelCInterfaces LANGUAGES C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_library(LowLevelCInterfaces spi.h i2c.h)
+add_library(LowLevelCInterfaces INTERFACE spi.h i2c.h)
 
 SET_TARGET_PROPERTIES(LowLevelCInterfaces PROPERTIES LINKER_LANGUAGE C)
