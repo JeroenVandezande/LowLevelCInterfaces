@@ -6,3 +6,4 @@ set(CMAKE_C_STANDARD 11)
 add_library(LowLevelCInterfaces INTERFACE spi.h i2c.h)
 
 SET_TARGET_PROPERTIES(LowLevelCInterfaces PROPERTIES LINKER_LANGUAGE C)
+target_include_directories (LowLevelCInterfaces INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
