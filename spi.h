@@ -3,6 +3,7 @@
 
 #include <stdint.h>
 #include <stdbool.h>
+#include <stddef.h>
 
 typedef void (*SPI_ReadWriteMethod_t)(uint8_t * data, size_t length, uint8_t cs_ID);
 
