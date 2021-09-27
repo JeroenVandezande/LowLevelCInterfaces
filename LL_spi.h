@@ -27,6 +27,8 @@
 #include <stdbool.h>
 #include <stddef.h>
 
-typedef void (*LL_SPIMaster_ReadWriteMethod_t)(uint8_t * data, size_t length, uint8_t cs_ID);
+enum SPI_Mode_t{spmUndefined, spmMode0, spmMode1, spmMode2, spmMode3}
+
+typedef void (*LL_SPIMaster_ReadWriteMethod_t)(uint8_t * data, size_t length, uint8_t cs_ID, enum SPI_Mode_t mode);
 
 #endif //LOWLEVELCINTERFACES_LIBRARY_H
